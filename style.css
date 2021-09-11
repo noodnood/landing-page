@@ -152,6 +152,8 @@ a {
   padding-bottom: 6em;
   padding-left: 30%;
   padding-right: 30%;
+  justify-content: center;
+  align-items: center;
 }
 
 .quote-text {
