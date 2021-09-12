@@ -7,15 +7,23 @@ body {
 }
 
 /* Main Header */
-
 .header {
+  background-color: #1f2937;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.header-container {
   background-color: #1f2937;
   color: #f9faf8;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+  max-width: 70em;
+  flex: 1;
 }
 
 ul {
@@ -40,7 +48,7 @@ a {
 }
 
 /* Container */
-.container {
+.body {
   display: flex;
   flex-direction: column;
 }
@@ -89,7 +97,6 @@ a {
   font-weight: 800;
 }
 
-
 .hero-signup-btn {
   background-color: #3882f6;
   border: 0 none;
@@ -100,9 +107,8 @@ a {
   padding: 5px 50px;
 }
 
-
 /* Information */
-.information {
+.information-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,7 +128,7 @@ a {
   justify-content: space-between;
   flex: 1;
   padding-bottom: 4em;
-  color: #1F2937;
+  color: #1f2937;
 }
 
 .card {
@@ -164,16 +170,15 @@ a {
   align-items: center;
 }
 
-.quote-text {
+.quote-container {
   text-align: center;
   font-style: italic;
   font-size: 24px;
   color: #1f2937;
   font-weight: 300;
-  max-width: 60em;
 }
 
-.quote-line {
+.quote-text {
   text-align: justify;
 }
 
@@ -185,13 +190,13 @@ a {
 }
 
 /* Call to Action */
-.call-to-action-container {
+.call-to-action {
   display: flex;
   justify-content: center;
   padding: 6em;
 }
 
-.call-to-action {
+.call-to-action-container {
   display: flex;
   justify-content: space-between;
   background-color: #3883f6;
@@ -203,14 +208,14 @@ a {
   flex: 1;
 }
 
-.call-to-action-text p{
-  margin:0;
+.call-to-action-text p {
+  margin: 0;
   flex: 0 0 auto;
 }
 
 .call-to-action-header {
   font-size: 24px;
-  color: #F9FAF8;
+  color: #f9faf8;
   font-weight: bold;
 }
 
@@ -221,7 +226,7 @@ a {
 
 .sign-up-button {
   background-color: #3882f6;
-  border: medium solid #F9FAF8;
+  border: medium solid #f9faf8;
   border-radius: 7px;
   color: white;
   font-size: 18px;
@@ -231,8 +236,8 @@ a {
 
 /* Footer */
 .footer {
-  background-color: #1F2937;
-  color: #E5E7EB;
+  background-color: #1f2937;
+  color: #e5e7eb;
   text-align: center;
   flex: 1;
   padding-top: 3em;
@@ -242,10 +247,22 @@ a {
 /* Padding */
 .header,
 .hero,
+.information,
 .card-container,
-.call-to-action-container,
+.call-to-action,
 .footer {
   padding-left: 15%;
   padding-right: 15%;
-  height: auto
+  height: auto;
+}
+
+.header-container,
+.hero-container,
+.call-to-action-container {
+  max-width: 70em;
+}
+
+.quote-container,
+.call-to-action-container {
+  max-width: 45em;
 }
